@@ -15,6 +15,7 @@
 		687C52A31BA8287900F778CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 687C52A21BA8287900F778CB /* Images.xcassets */; };
 		687C52A61BA8287900F778CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 687C52A41BA8287900F778CB /* LaunchScreen.xib */; };
 		687C52B21BA8287900F778CB /* InterviewTestingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 687C52B11BA8287900F778CB /* InterviewTestingTests.m */; };
+		687C52BF1BA82DBC00F778CB /* HowToUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 687C52BE1BA82DBC00F778CB /* HowToUseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		687C52AB1BA8287900F778CB /* InterviewTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterviewTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		687C52B01BA8287900F778CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		687C52B11BA8287900F778CB /* InterviewTestingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterviewTestingTests.m; sourceTree = "<group>"; };
+		687C52BD1BA82DBC00F778CB /* HowToUseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HowToUseViewController.h; sourceTree = "<group>"; };
+		687C52BE1BA82DBC00F778CB /* HowToUseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HowToUseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +86,10 @@
 		687C52911BA8287900F778CB /* InterviewTesting */ = {
 			isa = PBXGroup;
 			children = (
+				687C52BC1BA82CC100F778CB /* View */,
+				687C52BB1BA82CAB00F778CB /* Controller */,
 				687C52961BA8287900F778CB /* AppDelegate.h */,
 				687C52971BA8287900F778CB /* AppDelegate.m */,
-				687C529C1BA8287900F778CB /* MainViewController.h */,
-				687C529D1BA8287900F778CB /* MainViewController.m */,
 				687C529F1BA8287900F778CB /* Main.storyboard */,
 				687C52A21BA8287900F778CB /* Images.xcassets */,
 				687C52A41BA8287900F778CB /* LaunchScreen.xib */,
@@ -120,6 +123,24 @@
 				687C52B01BA8287900F778CB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		687C52BB1BA82CAB00F778CB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				687C529C1BA8287900F778CB /* MainViewController.h */,
+				687C529D1BA8287900F778CB /* MainViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		687C52BC1BA82CC100F778CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				687C52BD1BA82DBC00F778CB /* HowToUseViewController.h */,
+				687C52BE1BA82DBC00F778CB /* HowToUseViewController.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				687C52981BA8287900F778CB /* AppDelegate.m in Sources */,
+				687C52BF1BA82DBC00F778CB /* HowToUseViewController.m in Sources */,
 				687C52951BA8287900F778CB /* main.m in Sources */,
 				687C529E1BA8287900F778CB /* MainViewController.m in Sources */,
 				687C529B1BA8287900F778CB /* InterviewTesting.xcdatamodeld in Sources */,
