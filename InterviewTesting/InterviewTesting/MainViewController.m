@@ -7,6 +7,9 @@
 //
 
 #import "MainViewController.h"
+#import "InputViewController.h"
+
+#define INPUT_SEGUE_IDENTIFIER @"inputview"
 
 @interface MainViewController ()
 
@@ -16,12 +19,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+- (IBAction)onTouchBasicButton:(UIButton *)sender {
+    [self performSegueWithIdentifier:INPUT_SEGUE_IDENTIFIER sender:sender];
+}
+- (IBAction)onTouchProfessionalButton:(UIButton *)sender {
+    [self performSegueWithIdentifier:INPUT_SEGUE_IDENTIFIER sender:sender];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:INPUT_SEGUE_IDENTIFIER]) {
+        InputViewController *inputViewController;
+        if ([segue.destinationViewController isKindOfClass:[UINavigationController class]]) {
+            inputViewController = (InputViewController*)[segue.destinationViewController topViewController];
+        } else {
+            inputViewController = (InputViewController*)segue.destinationViewController;
+        }
+        UIButton *senderButton = (UIButton*)sender;
+        inputViewController.typeTest = senderButton.titleLabel.text;
+    }
 }
 
 @end

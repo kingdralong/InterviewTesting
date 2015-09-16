@@ -16,6 +16,7 @@
 		687C52A61BA8287900F778CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 687C52A41BA8287900F778CB /* LaunchScreen.xib */; };
 		687C52B21BA8287900F778CB /* InterviewTestingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 687C52B11BA8287900F778CB /* InterviewTestingTests.m */; };
 		687C52BF1BA82DBC00F778CB /* HowToUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 687C52BE1BA82DBC00F778CB /* HowToUseViewController.m */; };
+		687C52C21BA83BF200F778CB /* InputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 687C52C11BA83BF200F778CB /* InputViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		687C52B11BA8287900F778CB /* InterviewTestingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterviewTestingTests.m; sourceTree = "<group>"; };
 		687C52BD1BA82DBC00F778CB /* HowToUseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HowToUseViewController.h; sourceTree = "<group>"; };
 		687C52BE1BA82DBC00F778CB /* HowToUseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HowToUseViewController.m; sourceTree = "<group>"; };
+		687C52C01BA83BF200F778CB /* InputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputViewController.h; sourceTree = "<group>"; };
+		687C52C11BA83BF200F778CB /* InputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 			children = (
 				687C529C1BA8287900F778CB /* MainViewController.h */,
 				687C529D1BA8287900F778CB /* MainViewController.m */,
+				687C52C01BA83BF200F778CB /* InputViewController.h */,
+				687C52C11BA83BF200F778CB /* InputViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -244,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				687C52981BA8287900F778CB /* AppDelegate.m in Sources */,
+				687C52C21BA83BF200F778CB /* InputViewController.m in Sources */,
 				687C52BF1BA82DBC00F778CB /* HowToUseViewController.m in Sources */,
 				687C52951BA8287900F778CB /* main.m in Sources */,
 				687C529E1BA8287900F778CB /* MainViewController.m in Sources */,
